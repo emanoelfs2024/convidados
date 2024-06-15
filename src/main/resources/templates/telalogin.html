@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Tela de Login</h2>
+        <form id="loginForm" action="/autenticar" method="post">
+            <div class="form-group">
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="login" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+            <div class="form-group">
+                <a href="/autenticar" id="cadastroLink">Cadastre-se</a>
+            </div>
+        </form>
+    </div>
+
+   <!--  <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const login = document.getElementById('login').value;
+            const senha = document.getElementById('senha').value;
+            alert(`Login: ${login}\nSenha: ${senha}`);
+        });
+
+        document.getElementById('cadastroLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('Abrir tela de cadastro');
+        });
+    </script> -->
+</body>
+</html>
